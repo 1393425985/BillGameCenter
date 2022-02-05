@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "importHelpers": false,
+    "lib": ["es2017", "dom"],
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "outDir":"dist",
+    "paths": {
+      "@/*": ["src/*"],
+      "@@@/*": ["../ServerTypes/*"],
+    },
+    "allowSyntheticDefaultImports": true
+  },
+  "include": ["./src/**/*","./typings.d.ts","../ServerTypes/*"],
+  "exclude": [
+    "node_modules",
+  ]
+}

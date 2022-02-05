@@ -1,0 +1,100 @@
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+html {
+  font-size: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  box-shadow: none;
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(109, 114, 125, 0);
+}
+*::-webkit-scrollbar-corner {
+  background: transparent;
+}
+*:hover::-webkit-scrollbar-thumb {
+  background-color: rgba(109, 114, 125, 0.6);
+}
+@mainColor: #01c38d;
+@mainColor2: #516cb3;
+@borderColor1: #bfcfe0;
+@successColor: @mainColor;
+@errorColor: #ff3840;
+@fontColor: #191e29;
+
+:root {
+  --main-color: @mainColor;
+  --main-color2: @mainColor2;
+  --main-color2-hover: #d7e0f5;
+  --border-color-base: @borderColor1;
+  --success-color: @successColor;
+  --error-color: @errorColor;
+  --font-color: @fontColor;
+
+  --device-color: @mainColor;
+  --attr-color: #5841fd;
+  --group-color: #00bff1;
+}
+
+.fullWrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.flexBetween {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.flexCenter {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.floatCenter {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+}
+
+.textOver {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.emptyTextWrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & > span {
+    font-size: 14px;
+    line-height: 18px;
+    color: #666;
+  }
+}

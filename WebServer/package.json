@@ -1,0 +1,38 @@
+{
+  "name": "bcg_webserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node ./beforeBuild.js && tsc && node ./afterBuild.js",
+    "start": "ts-node src/index.ts",
+    "start:dev": "nodemon",
+    "server": "node dist/index.js"
+  },
+  "author": "Bill",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "jsonwebtoken": "^8.5.1",
+    "koa": "^2.13.4",
+    "koa-body": "^4.2.0",
+    "koa-compress": "^5.1.0",
+    "koa-jwt": "^4.0.3",
+    "koa-router": "^10.1.1",
+    "koa-static": "^5.0.0",
+    "koa-views": "^8.0.0",
+    "mongodb": "^4.3.1",
+    "mongoose": "^6.1.9",
+    "ws": "^8.4.2"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.13.4",
+    "@types/koa-compress": "^4.0.3",
+    "@types/koa-router": "^7.4.4",
+    "@types/koa-static": "^4.0.2",
+    "@types/ws": "^8.2.2",
+    "nodemon": "^2.0.15",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.5"
+  }
+}
